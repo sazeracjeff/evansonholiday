@@ -1,0 +1,15 @@
+<!-- <div class="nav">
+  <ul>
+    <li><a href="#">Option 1</a></li>
+    <li><a href="#">BANG</a></li>
+  </ul>
+</div> -->
+
+
+<div class="nav">
+	<a href="/">evansonholiday.com</a><br />
+	
+	<% @trips.each do |trip| %>
+		<a><%= link_to trip.title, trip_path(trip) %></a><br />
+	<% end %>
+</div>

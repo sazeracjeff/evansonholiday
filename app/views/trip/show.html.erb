@@ -1,0 +1,5 @@
+<%= render :partial => 'partials/nav' %>
+
+<% @trip.photos.each do |photo| %>
+	<%= image_tag photo.image_url, :class=>"photo" %>
+<% end %>

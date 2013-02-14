@@ -1,8 +1,7 @@
 class Trip < ActiveRecord::Base
   has_many :photos
-  mount_uploader :image, ImageUploader
   
-  attr_accessible :title, :photos
+  attr_accessible :title, :photos, :photos_attributes
   accepts_nested_attributes_for :photos
   
   
