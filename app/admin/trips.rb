@@ -10,5 +10,7 @@ ActiveAdmin.register Trip do
     end  
     f.buttons
   end
+  
+
 end
 

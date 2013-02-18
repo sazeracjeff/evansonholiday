@@ -9,7 +9,7 @@
 <div class="nav">
 	<a href="/">evansonholiday.com</a><br />
 	
-	<% @trips.each do |trip| %>
+	<% @trips_all.each do |trip| %>
 		<a><%= link_to trip.title, trip_path(trip) %></a><br />
 	<% end %>
 </div>
